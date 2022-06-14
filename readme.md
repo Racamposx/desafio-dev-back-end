@@ -8,32 +8,41 @@
 - Typescript
 - PostgresSQL
 
-Para executar o projeto siga as instruções:
-    1. Instale as dependências com o comando ´npm install´
-    2. Crie uma database no seu postgres com o nome "precato_challenge"
-    3. Execute o projeto
+Para executar o projeto siga as instruções: <br>
+    1. Instale as dependências com o comando "npm install"; <br>
+    2. Crie uma database no seu postgres com o nome "precato_challenge"; <br>
+    3. Execute o projeto;
 
-Rotas Subscriptions:
+* Rotas Subscriptions: <br>
     - POST /subscriptions
-        Exemplo body: {
+        Exemplo body: 
+        ```javascript 
+        {
             name: 'gabriel@gmail.com',
             last_message: 1,
             active: true
         }
+        ```
     - GET /subscriptions/:id
     - GET /subscriptions
     - PUT /subscriptions/:id
-        Exemplo body: {
+        Exemplo body: 
+        ```javascript 
+        {
             active: false
         }
+        ```
     - DELETE /subscriptions/:id
 
-Rotas MessageFlow:
+* Rotas MessageFlow:
     - POST /messageflow
-        Exemplo body: {
+        Exemplo body: 
+        ```javascript 
+        {
             position: 1,
             template_name: "Mensagem 1"
         }
+        ```
     - GET /messageflow
     - DELETE /subscriptions/:id
 
